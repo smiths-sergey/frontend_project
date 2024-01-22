@@ -22,4 +22,11 @@ module.exports = {
             },
         ],
     },
+    devServer: {
+        open: true,
+        liveReload: true,
+        static: path.resolve(__dirname, './src'),
+
+    },
+    target: 'web',
 }
