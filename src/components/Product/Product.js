@@ -1,20 +1,16 @@
+import { Link } from "react-router-dom";
 import Styles from "./product.module.css";
 function Product(props) {
-  const { title, description, price, img } = props.product;
+  const { title, description, price, img, id } = props.product;
   return (
     <div className={Styles.product}>
+      <h2>
+        <Link to={`/catalog/${id}`}>{title}</Link>
+      </h2>
       <img src={img} alt="My Image" width="300" />
-      <p>{title}</p>
+
       <p>{description}</p>
       <p>{price}</p>
-      <button
-        onClick={props.showDialog.bind(
-          this,
-          `Товар ${title} добавлен в корзину`
-        )}
-      >
-        В корзину
-      </button>
     </div>
   );
 }
