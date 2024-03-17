@@ -1,0 +1,14 @@
+{
+  "name": "29-common_modules",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "init:dist": "node ./src/createDistDir.js",
+    "writeport": "node ./src/writePort.js",
+    "read": "node ./src/readPort.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
