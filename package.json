@@ -1,14 +1,16 @@
 {
-  "name": "29-common_modules",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "type": "module",
-  "scripts": {
-    "init:dist": "node ./src/createDistDir.js",
-    "writeport": "node ./src/writePort.js",
-    "read": "node ./src/readPort.js"
-  },
-  "author": "",
-  "license": "ISC"
+	"dependencies": {
+		"express": "^4.18.2",
+		"pg": "^8.11.3"
+	},
+	"name": "nodestub",
+	"version": "1.0.0",
+	"main": "index.js",
+	"scripts": {
+		"initdb": "node initDb.js"
+	},
+	"author": "",
+	"license": "ISC",
+	"description": "",
+	"type": "module"
 }
