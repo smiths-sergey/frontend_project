@@ -1,18 +1,9 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Provider } from "react-redux";
-
-import { store } from "./store/storeIndex";
-import MainPage from "./pages/MainPage";
-
+import {MyButton} from "./components/MyButton"
 function App() {
   return (
-    <Provider store={store}>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<MainPage />} />
-        </Routes>
-      </BrowserRouter>
-    </Provider>
+    
+    <MyButton></MyButton>
+    
   );
 }
 
